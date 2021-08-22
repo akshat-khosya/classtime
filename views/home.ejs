@@ -1,15 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="main">
+       <h1 class="main__primary"><%= day %></h1>
+       <div class="classroom">
+           
+        <h2 class="main__secondary">Slot: <%= monday.slot %></h2>
+        <h2 class="main__secondary">Subject : <%= monday.subjectname %></h2>
+       <h2 class="main__secondary">Subject Code : <%= monday.subjectcode %></h2>
+       <h2 class="main__secondary">Facuility Name : <%= monday.faculityname %></h2>
+       <a href="<%=monday.classlink%>" class="main__class">Join Class Now</a>
+      <meta http-equiv="refresh" content="5; url=<%=monday.classlink%>"/>  
+       
+       </div>
+       <div class="text_main">You will be redirected to respected class meet in 5 seconds...</div>
+       
+    </section>
 
-<p><%= day %></p>
+    <canvas id="bg"></canvas>
 
 
 
-   
-        
-        <p><%= monday.slot %></p>
-        <p><%= monday.subjectname %></p>
-        <p><%= monday.subjectcode %></p>
-        <p><%= monday.faculityname %></p>
-        <a href="<%=monday.classlink%>">Join class now</a>
-        <meta http-equiv="refresh" content="5; url=<%=monday.classlink%>"/> 
-   
-   
+
+    <script src="./index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
